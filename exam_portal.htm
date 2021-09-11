@@ -1,0 +1,343 @@
+<html>
+    <head>
+        
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+		
+        <title>
+            Chemistry Engineering
+        </title>
+        <style type="text/css">
+        *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.heading {
+    width: 100%;
+    height: auto;
+    font-weight: bolder;
+    color: blue;
+    background: rgb(190, 190, 190);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 6px;
+    
+
+}
+.marks {
+    width: auto;
+    height: auto;
+    background: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 5px;
+    padding-top: 4px;
+    margin-top: 16px;
+    font-weight: bolder;
+    color:rgba(0, 0, 0, 0.61);
+    margin-left: 36px;
+}
+.question {
+    width: 120px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.705);
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+    align-content: center;
+    padding: 5px;
+    display:inline-block;
+    color: white;
+}
+.question1 {
+    margin-left: 36px;
+    border: 1px solid grey; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.705);
+    padding: 30px;
+    margin-right: 36px;
+    width: 66%;
+}
+.answers {
+    margin-left: 36px;
+    margin-right: 36px;
+    font-family:Arial, Helvetica, sans-serif;
+
+   
+    
+
+}
+table {
+    border: 1px solid black;
+    width: 70%;
+    font-weight: 600;
+    color:rgb(87, 85, 84)
+
+}
+th {
+    padding: 50px;
+    background: sandybrown;
+    width: 3%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    color: black;
+   
+    
+}
+td {
+    border-left: black;
+    padding-right: 40px ;
+    padding-left: 9px;
+    border-bottom: 1px solid black;
+    padding-top: 0px;
+}
+.footer {
+    background: rgb(220, 238, 119);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 15px;
+    height: 90px;
+    align-content: center;
+  
+}
+button {
+    background: transparent;
+    border: 1px solid rgb(10, 175, 180);
+    margin-left: 190px;
+    padding:4px;
+    font-weight: bold;
+    color: teal;
+    transition-duration: 1s ;
+    width: 90px;
+    height: 40px;
+  
+}
+button:hover {
+    background: rgb(7, 126, 196);
+    color: white;
+}
+#left1 {
+    background: rgb(220, 238, 119);
+    border: 1px solid rgb(10, 70, 180);
+    margin-left: 6px;
+    padding:4px;
+}
+#left1:hover {
+    background: rgb(7, 126, 196);
+    color: white;
+}
+#left3 {
+    background: transparent;
+    border: 1px solid rgb(27, 44, 77);
+    margin-left: 700px;
+    padding:4px;
+    width: auto;
+    border-radius: 8px;
+}
+#left3:hover {
+    background: rgb(7, 126, 196);
+    color: white;
+}
+#left4 {
+    background: transparent;
+    border: 1px solid rgb(10, 70, 180);
+    margin-left: 6px;
+    padding:4px;
+    border-radius: 8px;
+}
+#left4:hover {
+    background: rgb(7, 126, 196);
+    color: white;
+}
+#left5 {
+    background: transparent;
+    border: 1px solid rgb(10, 70, 180);
+    margin-left: 6px;
+    padding:4px;
+}  
+#left5:hover {
+    background: rgb(7, 126, 196);
+    color: white;
+ border-radius: 8px;
+}
+#left6 {
+    background: transparent;
+    border: 1px solid rgb(10, 70, 180);
+    margin-left: 6px;
+    padding:4px;
+    border-radius: 8px;
+}
+#left6:hover {
+    background: rgb(7, 126, 196);
+    color: white;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+p {
+    background-color: rgb(60, 111, 204) ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    height:30px;
+    width:220px;
+    color: white;
+    margin-right: 60px;
+    float: right;
+    margin-top: -20px;
+}
+span {
+    font-size: auto;
+  
+}
+#container{
+            
+            width: 250px;
+            height: 230px;
+            float: right;
+            margin-right: 90px;
+            margin-top: -180px;
+           
+        
+        }
+        #videoElement {
+            width: 290px;
+            height:280px;
+            background-color: transparent;
+
+        }
+img {
+    height: 15px;
+    width: 18px;
+    padding-right: 2px;
+}        
+        </style>
+        <body>
+            <div class="heading"><b>
+                <img src="laptop.png">2003756/FE2019 (107008): ENGINEERING CHEMISTRY</b>
+                <BR><img src="user.png">72153360E, JADHAV SHREYAS MAHENDRA
+                    <p id="countdown"></p>
+                    <script>const startingMinutes = 60;
+                        let time = startingMinutes * 60;
+                        
+                        const countdownEl = document.getElementById('countdown');
+                        setInterval(updateCountdown, 1000);
+                        
+                        function updateCountdown() {
+                            const minutes = Math.floor(time / 60);
+                            let seconds = time % 60;
+                            seconds = seconds < 10 ? '0' + seconds : seconds;
+                            countdownEl.innerHTML = `${minutes}<span>m</span>${seconds}<span>s</span>`;
+                            time--;
+                        
+                        }</script>
+         
+            </div>
+            <br>
+            <div class="question">Question #35</div>
+            <div class="question">1 mark</div>
+            <br>
+            <div class="marks">ID:72153360E, NOTE: SCREENSHOT PROHIBITED</div>
+            <br>
+            <div class="question1">Which of the following has property of absorbing CO2</div>
+            <div id="container">
+                <video autoplay="true" id="videoElement"></video>
+                </div>
+                <script type="text/javascript">
+                var video=document.querySelector("#videoElement");
+                navigator.getUserMedia=navigator.getUserMedia||navigator.
+                webkitGetUsermedia||navigator.mozGetUsermedia||navigator.
+                getUserMedia||navigator.oGetUsermedia;
+                if (navigator.getUserMedia) {
+                    navigator.getUserMedia({video:true},handleVideo,videoError);
+                
+                }
+                function handleVideo(stream){
+                    video.srcObject=stream;
+                    video.play()
+    
+                }
+                function videoError(e){
+                
+                }
+                </script>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="marks">ID:72153360E, NOTE: SCREENSHOT PROHIBITED</div>
+            <br>
+            <div class="answers">
+                <table>
+                    <tr>
+                        <th>
+                            <input type="radio">A</input>
+                        </th>
+                        <td><span>ID:72153360E<br><br></span>
+                            Anhydrous CaCl2
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="radio">B</input>
+                        </th>
+                        <td><span>ID:72153360E<br><br></span>
+                            Magnesiun perchlorate
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="radio">c</input>
+                        </th>
+                        <td><span>ID:72153360E<br><br></span>
+                            Conc. H2SO4
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="radio">D</input>
+                        </th>
+                        <td><span>ID:72153360E<br><br></span>
+                            KOH solution
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+           
+            <br>
+            <br>
+            <div class="footer">
+                <button id="left">Questions</button>
+                <button id="left1">Bookmark</button>
+                <button id="left3">First</button>
+                <button id="left4">Previous</button>
+                <button id="left5">Next</button>
+                <button id="left6">Last</button>
+           
+            </div>
+
+           
+
+
+
+
+
+
+        </body>
+    </head>
+</html>
